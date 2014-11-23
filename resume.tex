@@ -1,0 +1,160 @@
+
+% Imports and shit
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true,
+	urlcolor=blue,
+}
+
+% add tabular command
+
+\newcommand{\btab}[2]{
+	\bgroup
+	\def\arraystretch{#1}
+	\begin{tabular}{#2}
+}
+
+\newcommand{\etab}{
+	\end{tabular} \smallskip
+	\egroup
+}
+
+\name{Connor Taffe} % Your name
+\address{3101 S. Taylor St. \\ Little Rock, Arkansas 72204} % Your address
+\address{(501)~$\cdot$~606~$\cdot$~1807 \\ cpaynetaffe@gmail.com} % Your phone number and email
+
+\begin{document}
+
+% Education Section
+
+\begin{rSection}{Education}
+
+\begin{rSubsection}{University of Arkansas, Little Rock}{June 2018}{B.S. in Computer Science}
+
+	\item Courses: Data Structures and Algorithms, Computer Systems and Assembly Language, Calculus II, Language Structure, Databases, and Discrete Math.
+\end{rSubsection}
+
+{\bf Mississippi School for Mathematics and Sciences}
+
+\begin{rSubsection}{Arkansas School for Mathematics, Sciences, and the Arts}{}{}
+
+	\item First place Intel International Science and Engineering Fair project in Materials Engineering at the local level on my research into 3D printing large angles.
+	\item Courses: Computer Programming (II, III), Web Programming.
+\end{rSubsection}
+
+{\bf Cabot High School}
+
+\end{rSection}
+
+% Work Experience
+\begin{rSection}{Experience}
+
+% Emerging Analytics Center
+\begin{rSubsection}{Emerging Analytics Center, UALR}{October 2014 - Current}{Software Engineering Intern}{Little Rock, AR}
+
+	\item Developed Data Visualization solutions for Oculus Rift, CAVE system
+	\item Used Unity 3D (scripting with C\#) for 3D programming and model manipulation
+\end{rSubsection}
+
+% Research Assistant
+\begin{rSubsection}{BioInformatics}{August - October 2014}{Research Assistant}{Little Rock, AR}
+
+	\item Refactored Genetic algorithm code with an emphasis on common stylistic guidelines, and concurrency
+\end{rSubsection}
+
+% Future Tek
+\begin{rSubsection}{Future Tek Inc.}{June - August 2012}{Contract Graphic Designer}{Columbus, MS}
+
+	\item Worked as a contract graphic designer to produce a new catalog, logo, and social media presence. All graphics were designed personally with Inkscape and Gimp
+	\item This catalog is still in use (\href{http://www.futuretekinc.com/wp-content/uploads/2014/08/Future-Tek-Catalog.pdf}{link})
+\end{rSubsection}
+
+% Mesher freelance
+\begin{rSubsection}{\href{http://github.com/cptaffe/Mesher}{Mesher}}{Summer 2014}{Freelance Developer}{}
+
+	\item Client side stl-editing application built atop THREE.js, a popular WebGL interface
+	\item Provides a clean interface to many of the common operations done on STL models before 3D printing
+	\item This application provides a interactable 3D interface for models generated from STL files
+	\item Provides multiple modification and save options
+\end{rSubsection}
+
+% CentOS freelance
+\begin{rSubsection}{CentOS Server Wordpress Installation}{Summer 2014}{Freelance Developer}{}
+
+	\item Installed Wordpress on a pre-imaged CentOS server.
+	\item Set up a mysql database and edited Wordpress configs.
+\end{rSubsection}
+
+\end{rSection}
+
+\clearpage
+
+% Personal Projects
+\begin{rSection}{Personal Projects}
+
+% Lispy project
+\begin{rSubsection}{\href{http://github.com/cptaffe/lispy}{Lispy}}{Summer 2014}{}{}
+
+	\item Lisp-like interpreter written in Python
+	\item Producer-consumer threading optimizes stages.
+	\item Lazy-evaluation of defined variables
+	\item lambda functions
+	\item recursive lambdas
+	\item EBNF formal definition of the language.
+\end{rSubsection}
+
+% Tcpwsh project
+\begin{rSubsection}{\href{http://github.com/cptaffe/tcpwsh}{TcpWsh}}{Nover 2014}{}{}
+
+	\item Shell script which opens tcpdump with root privileges and routes packets using an unnamed FIFO to wireshark running with standard permissions.
+	\item Prevents wireshark from being exploited remotely
+	\item Allows utilization of tcpdump for efficient in-kernel packet filtering.
+\end{rSubsection}
+
+\end{rSection}
+
+% Technical Strengths
+
+\begin{rSection}{Technical Strengths}
+
+{\bf General Programming}
+
+\btab{1.1}{ l l }
+	Languages: & C++, C, Go, Java, Python, C\#, Rust \\
+	Version Control Systems: & git \\
+	Networking: & C, Go, Java, Python \\
+\etab
+
+{\bf Operating Systems}
+
+\btab{1.1}{ l l }
+	BSD: & OpenBSD, FreeBSD, Dragonfly BSD, OS X \\
+	Linux: & Debian, Red Hat Linux, CentOS, Fedora, Ubuntu, Manjaro \\
+	Windows: & 2000, XP, 7, 8
+\etab
+
+{\bf Unix System Administration}
+
+\btab{1.1}{ l l }
+	Proficient in shell: & bash, sh, tcsh \\
+	Proficeint with utils: & grep, sed, ssh, vim, nano, crontab, tcpdump, tar etc. \\
+	Experience with: & configuration files, package managers, compilation \\
+	Familiar with *nix concepts: & users, permissions, processes, cron jobs, files and i/o redirection, etc.
+\etab
+
+{\bf Web Programming}
+
+\btab{1.1}{ l l }
+	Server side: & Python, Go, Java, Php, and SQL (MySQL) \\
+	Client side: & JavaScript (JQuery, THREE.js, etc.), CSS, (X)HTML \\
+	Servers: & Apache, nginx, lighttpd \\
+	Written Servers in: & Python, Go \\
+\etab
+
+\end{rSection}
+
+\end{document}
