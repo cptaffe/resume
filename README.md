@@ -3,10 +3,6 @@ resume
 
 My resume, a latex file.
 
-To compile, have a latex distribution avaliable on your machine and use:
+To compile, have a latex distribution avaliable on your machine and use `make`.
 
-```sh
-  make
-```
-
-now you should have a resume.pdf.
+This should generate a resume.pdf
