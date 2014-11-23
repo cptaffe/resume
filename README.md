@@ -9,4 +9,4 @@ To compile, have a latex distribution avaliable on your machine and use:
   make
 ```
 
-now you should have a resume.pdf avaliable.
+now you should have a resume.pdf.
