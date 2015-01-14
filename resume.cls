@@ -7,6 +7,10 @@
 % without any warranty.
 %
 
+% Modified by Connor Taffe
+% Copyright (c) 2014 Connor Taffe <cpaynetaffe@gmail.com>
+% licensed under the MIT license <opensource.org/licenses/MIT>
+
 \ProvidesClass{resume}[2010/07/10 v0.9 Resume class]
 
 \LoadClass[11pt,letterpaper]{article} % Font size and paper type
