@@ -13,6 +13,7 @@
 	urlcolor=blue,
 }
 
+\usepackage{fontspec}
 % add tabular command
 
 \newcommand{\btab}[2]{
@@ -27,14 +28,28 @@
 }
 
 \name{Connor Taffe} % Your name
-\address{10907 Lancelot Ct. \\ Little Rock, Arkansas 72209} % Your address
-\address{(501)~$\cdot$~606~$\cdot$~1807 \\ \href{mailto:cpaynetaffe@gmail.com}{cpaynetaffe@gmail.com} \\
+\address{(501) 606-1807 \\ \href{mailto:cpaynetaffe@gmail.com}{cpaynetaffe@gmail.com} \\
 \href{http://byteflame.org}{byteflame.org}} % Your phone number and email
 
 \begin{document}
 
 % Work Experience
 \begin{rSection}{Experience}
+
+% Acxiom ITO
+\begin{rSubsection}{Acxiom ITO}{October 2015, current}{Entry Application Developer}{Conway, AR}
+
+	\item Wrote and maintained software in C\# for the .NET platform.
+	\item Versioned software in Git and maintained repository via Enterprise Github.
+\end{rSubsection}
+
+% EIT IT
+\begin{rSubsection}{UALR EIT IT}{August - October 2015}{Student Worker}{Little Rock, AR}
+
+	\item Resolved technology related issues for staff and students.
+	\item Tracked issues in ticketing system.
+	\item Installed and Setup Microsoft Windows, including joining to Active Directory domain.
+\end{rSubsection}
 
 % SUPER Program
 \begin{rSubsection}{EIT SUPER, UALR}{Summer 2015}{SUPER Scholar}{Little Rock, AR}
@@ -49,7 +64,7 @@
 \end{rSubsection}
 
 % Research Assistant
-\begin{rSubsection}{Bioinformatics}{August - October 2014}{Research Assistant}{Little Rock, AR}
+\begin{rSubsection}{UALR Bioinformatics}{August - October 2014}{Research Assistant}{Little Rock, AR}
 
 	\item Preliminary work on refactoring a genetic algorithm codebase with an emphasis on common stylistic guidelines and concurrency.
 \end{rSubsection}
@@ -61,26 +76,23 @@
 	\item Set up a mysql database and edited Wordpress configs.
 \end{rSubsection}
 
-% Mesher freelance
-\begin{rSubsection}{\href{http://github.com/cptaffe/Mesher}{Mesher}}{July - August 2014}{Freelance Developer}{}
+% % Mesher freelance
+% \begin{rSubsection}{\href{http://github.com/cptaffe/Mesher}{Mesher}}{July - August 2014}{Freelance Developer}{}
+%
+% 	\item Client side stl-editing application built atop THREE.js, a popular WebGL interface.
+% 	\item Provides a clean interface to many of the common operations done on STL models before 3D printing.
+% 	\item This application provides a interactable 3D interface for models generated from STL files.
+% 	\item Provides multiple modification and save options.
+% \end{rSubsection}
 
-	\item Client side stl-editing application built atop THREE.js, a popular WebGL interface.
-	\item Provides a clean interface to many of the common operations done on STL models before 3D printing.
-	\item This application provides a interactable 3D interface for models generated from STL files.
-	\item Provides multiple modification and save options.
-\end{rSubsection}
-
-% Future Tek
-\begin{rSubsection}{Future Tek Inc.}{June - August 2012}{Contract Graphic Designer}{Columbus, MS}
-
-	\item Worked as a contract graphic designer to produce a new catalog, logo, and social media presence. All graphics were designed personally with Inkscape and Gimp.
-	\item This catalog is still in use (\href{http://www.futuretekinc.com/wp-content/uploads/2014/08/Future-Tek-Catalog.pdf}{link}).
-\end{rSubsection}
+% % Future Tek
+% \begin{rSubsection}{Future Tek Inc.}{June - August 2012}{Contract Graphic Designer}{Columbus, MS}
+%
+% 	\item Worked as a contract graphic designer to produce a new catalog, logo, and social media presence. All graphics were designed personally with Inkscape and Gimp.
+% 	\item This catalog is still in use (\href{http://www.futuretekinc.com/wp-content/uploads/2014/08/Future-Tek-Catalog.pdf}{link}).
+% \end{rSubsection}
 
 \end{rSection}
-
-% sections wrapping pages looks junky
-\clearpage
 
 % Education Section
 
@@ -91,19 +103,10 @@
 	\item Substantail Completed Courses: Data Structures and Algorithms, Computer Systems and Assembly Language, Calculus II, Operating Systems, Databases, and Discrete Math.
 \end{rSubsection}
 
-% hspace{0.0em} somehow fixes the margin
-{\bf Cabot High School} \hfill {2014} \hspace{0.0em}
-
-\begin{rSubsection}{Arkansas School for Mathematics, Sciences, and the Arts}{2013 - 2014}{}
-
-	\item First place Intel International Science and Engineering Fair project in Materials Engineering at the local level on my research into 3D printing large angles.
-\end{rSubsection}
-
-
-% hspace{0.0em} somehow fixes the margin
-{\bf Mississippi School for Mathematics and Sciences} \hfill {2012 - 2013} \hspace{0.0em}
-
 \end{rSection}
+
+% sections wrapping pages looks junky
+\clearpage
 
 % Personal Projects
 \begin{rSection}{Personal Projects}
@@ -138,9 +141,6 @@
 
 \end{rSection}
 
-% sections wrapping pages looks junky
-\clearpage
-
 % Technical Strengths
 
 \begin{rSection}{Technical Strengths}
@@ -148,9 +148,10 @@
 {\bf General Programming}
 
 \btab{1.1}{ l l }
-	Languages: &  C\#, C++, C, Go, Java, Scala, Python \\
+	Languages: &  C\#, C++, C, Go, Rust, JavaScript, Java, Scala, Python \\
 	Libraries: & Android SDK \\
 	Version Control Systems: & git \\
+	Technologies: & Docker \\
 	Build Systems: & Make, CMake, Gradle \\
 \etab
 
@@ -170,8 +171,9 @@ userspace programming, and light kernel programming.
 {\bf Web Programming}
 
 \btab{1.1}{ l l }
-	Server side: & Python, Go, Php, SQL (MySQL, PostgreSQL) \\
-	Client side: & JavaScript (JQuery, THREE.js, etc.), CSS, (X)HTML \\
+	Server side: & Python, Go, Rust, Node.js, Php \\
+	Databases: & MySQL, PostgreSQL, CockroachDB \\
+	Client side: & Typescript (with Angular 2), JavaScript (JQuery, THREE.js, etc.), \\ & Bootstrap (3, Angular 2 + Bootstrap 4), CSS, (X)HTML \\
 \etab
 
 \end{rSection}
