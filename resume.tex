@@ -39,8 +39,13 @@
 % Acxiom
 \begin{rSubsection}{Apptegy}{January 2017}{Software Engineer}{Little Rock, Arkansas}
 
-	\item Developing Ruby on Rails applications as a member of the Apptegy Developoment Team
-	\item Improved code quality by fixing bugs, refactoring to more closely follow \href{https://github.com/github/rubocop-github/blob/master/STYLEGUIDE.md}{style guides}, and improving test coverage
+	\item Spearheaded transition from monolithic Rails application to individually scalable Ruby (\href{http://roda.jeremyevans.net/}{Roda}+\href{http://sequel.jeremyevans.net/}{Sequel}) containerized (\href{https://www.docker.com/}{Docker}) microservices
+	\item Developed multi-service multi-tenant authentication and authorization system with arbitrarily granular permissions
+	\item Introduced \href{https://memcached.org/}{memcached} caching layer through \href{http://sequel.jeremyevans.net/rdoc-plugins/classes/Sequel/Plugins/Caching.html}{Sequel} which led to a 4x speedup on cached queries
+	\item Sped up core product by two orders of magnitude through microservice rearchitecture
+	\item Introduced and implemented industry-standard \href{https://www.openapis.org/}{OpenAPI} (Swagger 2.0) specifications for \href{http://apptegy.com/thrillshare}{Thrillshare} services
+	\item Implemented CI and CD for core services with an internal \href{https://jenkins.io/}{Jenkins} (with \href{https://jenkins.io/projects/blueocean/}{Blue Ocean}) build server with Github integration
+	\item Developed internal services including a HKP GPG key server (initially deployed for \href{https://github.com/AGWA/git-crypt}{storing encrypted secrets in version control}), OpenAPI \href{https://github.com/Rebilly/ReDoc}{documenation server}
 \end{rSubsection}
 
 % Acxiom
@@ -91,10 +96,10 @@
 \end{rSubsection}
 
 % Research Assistant
-\begin{rSubsection}{UALR Bioinformatics}{August - October 2014}{Research Assistant}{Little Rock, Arkansas}
-
-	\item Preliminary work on refactoring a genetic algorithm codebase with an emphasis on common stylistic guidelines and concurrency.
-\end{rSubsection}
+% \begin{rSubsection}{UALR Bioinformatics}{August - October 2014}{Research Assistant}{Little Rock, Arkansas}
+%
+% 	\item Preliminary work on refactoring a genetic algorithm codebase with an emphasis on common stylistic guidelines and concurrency.
+% \end{rSubsection}
 
 \end{rSection}
 
@@ -165,9 +170,9 @@
 {\bf General Programming}
 
 \btab{1.1}{ l l }
-	Languages: &  Go, C, C++, Python, JavaScript, Typescript, (X)HTML, CSS, \\
+	Languages: &  Ruby, Go, C, C++, Python, JavaScript, Typescript, (X)HTML, CSS, \\
 	& Scala, Java, C\#, Rust, Php \\
-	Libraries: & Android SDK, JQuery, THREE.js, Angular 2, Angular Material, Bootstrap \\
+	Libraries: & Roda, Sequel, Rails, Vue.js, Android SDK, Bootstrap \\
 	Systems: & Hadoop, Spark \\
 	Tools: & Docker, Git, Make, Ninja, CMake, Gradle \\
 	Databases: & PostgresSQL \\
